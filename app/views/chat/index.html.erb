@@ -1,0 +1,10 @@
+<h1>ChatGPT</h1>
+
+<p><%= @prompt %></p>
+
+<p><%= @response %></p>
+
+<%= form_tag(root_path, method: :get) do %>
+  <%= text_field_tag(:prompt) %>
+  <%= submit_tag("Ask") %>
+<% end %>
