@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the rails project integrating the OpenAI API.
 
-Things you may want to cover:
+* We used latest model `text-davinci-003` which is used in the ChatGPT.
+* Each words are considered as tokens and OpenAI subscription is based on the Tokens count.
 
-* Ruby version
+## Procedure
 
-* System dependencies
+Run Bundle install
+`bundle install`
 
-* Configuration
+get the OpenAPI key from the OpenAI https://openai.com/api/.
 
-* Database creation
+set the API Key in environment variable.
+`ENV['OPENAI_API_KEY']= your_api_key`
 
-* Database initialization
+run the server `rails s`.
 
-* How to run the test suite
+Here you go!!!
 
-* Services (job queues, cache servers, search engines, etc.)
+### reference
 
-* Deployment instructions
-
-* ...
+Playground of OpenAI - https://platform.openai.com/playground/p/default-interview-questions
